@@ -1,14 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
-import Home from './pages/Home';
-import Counter from './components/Counter';
-function App() {
-  return (
-    <div className="App">
-      <Home />
-      {/* <Counter /> */}
-    </div>
-  );
+import React, { Component } from 'react'
+import Home from './pages/Home'
+import About from './pages/About'
+
+class App extends Component {
+  constructor(props) {
+    super(props)
+  
+    this.state = {
+       isHome:false,
+       isAbout:false
+    }
+  }
+  handleHome = ()=>{
+    this.setState({
+      isHome:true
+    })
+  }
+
+  handleAbout = ()=>{
+    this.setState({
+      isAbout:true
+    })
+  }
+
+  render() {
+    return (
+      this.state.isHome?
+      (
+        <Home />
+      ) :
+      this.state.isAbout ?
+      (
+        <About/>
+      ) :
+      (
+      <div>
+        <button onClick={this.handleHome}>Home</button>
+        <button onClick={this.handleAbout}>About</button>
+      </div>
+
+      )
+    )
+  }
 }
 
-export default App;
+export default App
