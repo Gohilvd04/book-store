@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Title from '../components/Title'
+import '../Title.css'
 export default class Home extends Component {
   constructor(){
     super()

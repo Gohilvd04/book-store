@@ -1,0 +1,56 @@
+.main{
+
+    /* margin: auto; */
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    /* Way to center div */
+
+
+    /* height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center; */
+
+    /* Way to center div */
+
+    /* height: 100vh;
+    display: grid;
+    place-items: center; */
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid black;
+    box-shadow: 10px 10px 4px rgba(0,0,0,0.7);
+    /* margin-top: 200px; */
+    /* padding: 20px; */
+    height: 300px;
+    width: 500px;
+}
+
+.label,.input{
+    margin: 5px;
+    padding: 5px;
+    font-size: large;
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    /* height: 40px; */
+}
+
+button{
+    padding: 0.7rem 1.5rem;
+    background: rgb(0, 0, 0);
+    color: aliceblue;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}

@@ -1,15 +1,21 @@
 import React from 'react'
+import '../Title.css'
 
-export default function Title(props) {
-  const {name,desc} = props.person
+ function Title({person}) {
+  const {name,desc} = person
+  
+
   return (
     // <div>
     //   <h1>{title}</h1>
     //   <p>{disc}</p>
 
     // </div>
+    
     <div>
-        <h1>{name}  {desc}</h1>
+        <h1 style={{}} >{name}  {desc}</h1>
     </div>
   )
 }
+
+export default React.memo(Title)
